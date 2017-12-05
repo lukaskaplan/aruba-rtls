@@ -1,0 +1,13 @@
+<?php 
+/* RTLS Section */
+define("AR_KEY","password");	// RTLS shared secret with Aruba controller
+define("AR_PORT","8855");	// RTLS port for listening (default 8855)
+
+/* Database section */
+define("DB_USER","dbusername");
+define("DB_PASS","dbpassword");
+define("DB_SERVER","localhost");
+define("DB_DATABASE","rtls");
+
+?>
+
