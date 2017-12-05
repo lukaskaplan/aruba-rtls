@@ -1,4 +1,5 @@
 <?php
+include("./config.php");
 
 //Reduce errors
 error_reporting(~E_WARNING);

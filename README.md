@@ -1,1 +1,1 @@
-# Simple RTLS collector
+# Simple Aruba RTLS collector
