@@ -12,22 +12,26 @@ This project is still in proof of concept phase. It is not suitable for producti
 
 ### How to install it:
 ```Bash
-user@server:~$ __git clone https://github.com/lukaskaplan/aruba-rtls__
-user@server:~$ __cd aruba-rtls__
-user@server:~/aruba-rtls$ __mysql -u username -p rtls < database.sql__
-user@server:~/aruba-rtls$ __mysql -u username -p__
+user@server:~$ git clone https://github.com/lukaskaplan/aruba-rtls
+user@server:~$ cd aruba-rtls
+user@server:~/aruba-rtls$ mysql -u username -p rtls < database.sql
+user@server:~/aruba-rtls$ mysql -u username -p
 mysql> GRANT ALL PRIVILEGES ON *.* TO 'rtls-user'@'%' IDENTIFIED BY 'password' WITH GRANT OPTION;
 mysql> exit
-user@server:~/aruba-rtls$ __mv ./config.php.exmaple ./config.php__
+user@server:~/aruba-rtls$ mv ./config.php.exmaple ./config.php
 ```
 Then edit ./config.php, update RTLS key, RTLS port and  DB credentials.
 
 ## How to use it
 ### a) One time run
+```Bash
 user@server:~/aruba-rtls$ __php ./rtls_server.php__
+```
 
 ### b) Run it in background
+```Bash
 user@server:~/aruba-rtls$ __nohup php ./rtls_server.php &>/dev/null &__
+```
 
 ### How to stop it
 ```Bash
